@@ -1,0 +1,106 @@
+/* PALETTE DE COULEURS */
+body {
+  background-color: #1C145A;
+  margin: 0;
+  font-family: degular,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+header .row {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+header #frame {
+  position: absolute;
+  left: 0;
+}
+
+header #logo {
+  position: absolute;
+  left: 41%;
+  top: 85%;
+}
+
+header #star1 {
+  float: right;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-text {
+  position: relative;
+  width: 50%;
+}
+
+main .main-text img {
+  position: absolute;
+  top: 4%;
+  left: -10%;
+}
+
+main .main-text h1 {
+  font-family: degular-display,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  color: #B3CFF9;
+  font-size: 3em;
+  position: relative;
+  z-index: 2;
+}
+
+main .main-text h1::after {
+  content: url(../../assets/imgs/star-3.svg);
+  position: relative;
+  left: 250px;
+  top: 10px;
+}
+
+main #button_container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+main #button_container p {
+  color: white;
+}
+
+main #button_container #rectangle {
+  position: absolute;
+  top: 2%;
+  left: 36%;
+  padding: 0% 2%;
+  background-color: #ED975D;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+main #button_container #ell_rect {
+  width: 30%;
+  position: relative;
+  top: 15px;
+  left: -3%;
+}
+/*# sourceMappingURL=main.css.map */
