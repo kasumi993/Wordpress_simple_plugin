@@ -5,6 +5,8 @@ body {
   font-family: degular,sans-serif;
   font-weight: 500;
   font-style: normal;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -27,7 +29,7 @@ header #frame {
 header #logo {
   position: absolute;
   left: 41%;
-  top: 85%;
+  top: 70%;
 }
 
 header #star1 {
@@ -35,7 +37,6 @@ header #star1 {
 }
 
 main {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +51,8 @@ main {
 
 main .main-text {
   position: relative;
-  width: 50%;
+  margin-top: 1%;
+  width: 55%;
 }
 
 main .main-text img {
@@ -65,9 +67,10 @@ main .main-text h1 {
   font-style: normal;
   text-align: center;
   color: #B3CFF9;
-  font-size: 3em;
+  font-size: 4vw;
   position: relative;
   z-index: 2;
+  margin-bottom: 1%;
 }
 
 main .main-text h1::after {
@@ -79,28 +82,68 @@ main .main-text h1::after {
 
 main #button_container {
   position: relative;
-  width: 100%;
-  text-align: center;
-}
-
-main #button_container p {
-  color: white;
+  top: 5vh;
+  left: -11%;
+  margin: 2% auto;
 }
 
 main #button_container #rectangle {
+  position: relative;
+}
+
+main #button_container #rectangle::before {
+  content: "";
   position: absolute;
-  top: 2%;
-  left: 36%;
-  padding: 0% 2%;
+  top: -4%;
+  left: 30%;
+  background-color: #D65D56;
+  display: inline-block;
+  width: 350px;
+  height: 55px;
+}
+
+main #button_container #rectangle::after {
+  content: "j'ai un projet dont je voudrais vous parler";
+  color: white;
+  display: inline-block;
+  padding: 15px 30px;
+  width: 270px;
+  position: absolute;
+  top: -22%;
+  left: 40%;
   background-color: #ED975D;
   -webkit-transform: rotate(-3deg);
           transform: rotate(-3deg);
 }
 
-main #button_container #ell_rect {
-  width: 30%;
-  position: relative;
-  top: 15px;
-  left: -3%;
+@media screen and (max-width: 880px) {
+  main .main-text {
+    width: 70%;
+    margin-top: 5%;
+  }
+  main .main-text h1 {
+    font-size: 5vw;
+  }
+  main #button_container #rectangle {
+    top: 7vh;
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main .main-text {
+    width: 80%;
+    margin-top: 15%;
+  }
+  main .main-text h1 {
+    font-size: 4.9vw;
+  }
+  main #button_container #rectangle {
+    top: 2vh;
+    left: -30%;
+  }
+  header #logo {
+    left: 39%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

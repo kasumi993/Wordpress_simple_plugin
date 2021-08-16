@@ -8,6 +8,8 @@ body {
   font-family: degular,sans-serif;
   font-weight: 500;
   font-style: normal;
+  width: 100vw;
+  height: 100vh;
 }
 
 
@@ -29,7 +31,7 @@ header{
   #logo{
     position:absolute;
     left:41%;
-    top: 85%;
+    top: 70%;
   }
 
   #star1{
@@ -39,13 +41,13 @@ header{
 
 
 main{
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   .main-text{
     position: relative;
-    width: 50%;
+    margin-top: 1%;
+    width: 55%;
     img{
       position: absolute;
       top: 4%;
@@ -58,9 +60,10 @@ main{
       font-style: normal;
       text-align: center;
       color: $light-blue;
-      font-size: 3em;
+      font-size: 4vw;
       position: relative;
       z-index: 2;
+      margin-bottom: 1%;
 
       &::after{
         content: url(../../assets/imgs/star-3.svg);
@@ -75,25 +78,39 @@ main{
 
   #button_container{
     position: relative;
-    width: 100%;
-    text-align: center;
-    p{
-      color: white;
-    }
+    top: 5vh;
+    left: -11%;
+    margin: 2% auto;
+
     #rectangle{
-      position: absolute;
-      top: 2%;
-      left: 36%;
-      padding: 0% 2%;
-      background-color: $light-orange;
-      transform: rotate(-3deg);
-    }
-    #ell_rect{
-      width: 30%;
       position: relative;
-      top: 15px;
-      left: -3%;
+      &::before{
+        content: "";
+        position: absolute;
+        top: -4%;
+        left: 30%;
+        background-color: $dark-orange;
+        display: inline-block;
+        width: 350px;
+        height: 55px;
+      }
+
+      &::after{
+        content: "j'ai un projet dont je voudrais vous parler";
+        color: white;
+        display: inline-block;
+        padding: 15px 30px;
+        width: 270px;
+        position: absolute;
+        top: -22%;
+        left: 40%;
+        background-color: $light-orange;
+        transform: rotate(-3deg);
+      }
+
     }
+      // rectangle style ends here
+
   }
 
 }
@@ -101,3 +118,57 @@ main{
 
 
 
+// responsive handler
+
+@media screen and (max-width: 880px) {
+
+  main .main-text{
+    width: 70%;
+    margin-top: 5%;
+    h1{
+      font-size: 5vw;
+    }
+  }
+
+  main  #button_container #rectangle{
+    top: 7vh;
+    left: -20%;
+  }
+}
+
+// @media screen and (max-width: 580px) {
+//   body {
+//     background-color: lightgreen;
+//   }
+
+//   main .main-text{
+//     width: 70%;
+//     h1{
+//       font-size: 5vw;
+//     }
+//   }
+
+//   main  #button_container #rectangle{
+//       left: 36%;
+//   }
+// }
+
+@media screen and (max-width: 680px) {
+
+  main .main-text{
+    width: 80%;
+    margin-top: 15%;
+    h1{
+      font-size: 4.9vw;
+    }
+  }
+
+  main  #button_container #rectangle{
+    top: 2vh;
+    left: -30%;
+  }
+
+  header #logo{
+    left: 39%;
+  }
+}
