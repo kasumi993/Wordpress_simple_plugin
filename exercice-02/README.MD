@@ -3,7 +3,7 @@
 
 Le but de cet exercice est de créer un mini plugin wordpress permettant d'afficher une liste de réseaux sociaux via un shortcode.
 L'utilisateur du wordpress, pourra ensuite importer sa liste depuis le shortcode en question.
-Pour cet exercice, aucun design ne doit etre créer, une simple liste HTML suffira.
+Pour cet exercice, aucun design ne doit etre créé, une simple liste HTML suffira.
 
 La liste : 
 - Facebook : https://facebook.com.
