@@ -1,3 +1,6 @@
+#Candidature KHADY GUEYE, bachelor 3 formation developpeuse full stack
+
+
 #Recrutement Alternant 2021
 
 Dans le cadre du recrutement d'un alternant développeur pour l'année 2021 nous avons réalisés deux sujets d'excercice à réaliser.
