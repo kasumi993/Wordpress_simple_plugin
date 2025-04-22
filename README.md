@@ -1,4 +1,4 @@
-#Candidature KHADY GUEYE, bachelor 3 formation developpeuse full stack
+A wordpress simple plugin
 
 
 :) 
